@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <section class="bottom-panel">
+            <div class="button-cover">
+              <div class="button b2" id="button-10">
+                <input type="checkbox" class="checkbox" />
+                <div class="knobs">
+                  <span>Не&nbsp;проверен</span>
+                </div>
+                <div class="layer"></div>
+              </div>
+            </div>
+
+            <div class="info-container">
+              <div class="info-container-inner">
+                <div class="info-number">6</div>
+                <div class="info-text">вопросов в&nbsp;тесте</div>
+              </div>
+              <div class="info-container-inner">
+                <div class="info-number">7,75</div>
+                <div class="info-text">средний балл за тест</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+  }
+
+  .wrapper .container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+    max-width: 1500px;
+    background: #ffffff;
+    box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .wrapper .container .bottom-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: Montserrat;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  .wrapper .container .bottom-panel .info-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .wrapper .container .bottom-panel .info-container .info-container-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .info-container-inner .info-number {
+    color: #813fea;
+    font-feature-settings: "liga" off, "clig" off;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .info-container-inner .info-text {
+    color: #b7b5be;
+    font-feature-settings: "liga" off, "clig" off;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+
+    max-width: 70px;
+  }
+
+  /*------ SWITCH CSS ---------*/
+  .button-cover {
+    height: 100%;
+  }
+  .button {
+    position: relative;
+    top: 50%;
+    width: 224px;
+    height: 42px;
+    margin: -20px auto 0 auto;
+    overflow: hidden;
+    background-color: rgba(82, 83, 208, 0.08);
+  }
+
+  .button.r,
+  .button.r .layer {
+    border-radius: 100px;
+  }
+
+  .button.b2 {
+    border-radius: 6px;
+  }
+
+  .checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .knobs {
+    z-index: 2;
+  }
+
+  .layer {
+    width: 100%;
+    background-color: #ebf7fc;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+
+  /* Button 10 */
+  #button-10 .knobs:before,
+  #button-10 .knobs:after,
+  #button-10 .knobs span {
+    position: absolute;
+    top: 4px;
+    width: 100px;
+    height: 16px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    border-radius: 4px;
+    transition: 0.3s ease all;
+  }
+
+  #button-10 .knobs:before {
+    content: "";
+    left: 4px;
+    background-color: #b7b5be;
+  }
+
+  #button-10 .knobs:after {
+    content: "Проверен";
+    right: 4px;
+    top: 5px;
+    color: #a5a2ad;
+  }
+
+  #button-10 .knobs span {
+    display: inline-block;
+    left: 4px;
+    color: #fff;
+    z-index: 1;
+    top: 5px;
+  }
+
+  #button-10 .checkbox:checked + .knobs span {
+    color: #a5a2ad;
+  }
+
+  #button-10 .checkbox:checked + .knobs:before {
+    left: 112px;
+    background-color: #9887ff;
+  }
+
+  #button-10 .checkbox:checked + .knobs:after {
+    color: #fff;
+  }
+
+  #button-10 .checkbox:checked ~ .layer {
+    background-color: #fcebeb;
+  }
+
+  /*--------- END --------*/
+</style>
