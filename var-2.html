@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <section class="bottom-panel">
+            <div class="toggle-container">
+              <label class="label">
+                <input type="checkbox" class="input" />
+                <span class="circle">
+                  <svg
+                    class="icon"
+                    aria-hidden="true"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_15011_3798)">
+                      <path
+                        d="M10.5001 3.55942L7.05943 7.00005L9.00006 8.94067L13.9688 3.9688C14.5032 3.43442 14.5032 2.56567 13.9688 2.02817C13.4344 1.49067 12.5657 1.4938 12.0282 2.02817L11.5594 2.49692L10.5001 3.55942ZM6.00006 8.05942L4.17193 9.88755C2.95943 11.1 2.10943 12.6219 1.71568 14.2844C3.37818 13.8875 4.90006 13.0375 6.11256 11.8282L7.94068 10L6.00006 8.05942ZM7.26256 0.740674C8.13443 0.165674 9.32193 0.259424 10.0907 1.02817L10.5001 1.44067L10.9688 0.971924C12.0907 -0.149951 13.9094 -0.149951 15.0313 0.968799C16.1532 2.09067 16.1532 3.90942 15.0313 5.02817L7.17193 12.8907C5.67193 14.3907 3.75943 15.4157 1.67818 15.8313L0.896934 15.9875C0.650059 16.0375 0.396934 15.9594 0.218809 15.7813C0.0406844 15.6032 -0.0343156 15.35 0.0125594 15.1032L0.168809 14.3219C0.584434 12.2407 1.60943 10.3282 3.10943 8.82817L5.60943 6.32817L6.21881 5.7188L8.37818 3.55942L8.57193 3.36567L8.90943 3.0313L9.44068 2.50005L9.03131 2.09067C8.73756 1.79692 8.26256 1.80005 7.97193 2.09067L5.28131 4.7813C5.15318 4.90942 4.99068 4.9813 4.82193 4.99692C4.60631 5.0188 4.38443 4.9438 4.21881 4.7813C3.92506 4.48755 3.92506 4.01255 4.21881 3.72192L6.90943 1.0313C7.01881 0.921924 7.13756 0.825049 7.26256 0.743799V0.740674Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_15011_3798">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <!-- <svg
+                    class="icon"
+                    aria-hidden="true"
+                    width="15"
+                    height="20"
+                    viewBox="0 0 15 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.4766 5.35156C13.8438 4.98438 13.8438 4.39062 13.4766 4.02734C13.1094 3.66406 12.5156 3.66016 12.1523 4.02734L7.50391 8.67578L2.85156 4.02344C2.48438 3.65625 1.89062 3.65625 1.52734 4.02344C1.16406 4.39063 1.16016 4.98437 1.52734 5.34766L6.17578 9.99609L1.52344 14.6484C1.15625 15.0156 1.15625 15.6094 1.52344 15.9727C1.89063 16.3359 2.48438 16.3398 2.84766 15.9727L7.49609 11.3242L12.1484 15.9766C12.5156 16.3438 13.1094 16.3438 13.4727 15.9766C13.8359 15.6094 13.8398 15.0156 13.4727 14.6523L8.82422 10.0039L13.4766 5.35156Z"
+                      fill="white"
+                    /></svg> -->
+                </span>
+
+                <!-- <div class="square"></div> -->
+
+                <p class="title">На&nbsp;проверке</p>
+                <p class="title">Проверен</p>
+              </label>
+            </div>
+            <div class="info-container">
+              <div class="info-container-inner">
+                <div class="info-number">6</div>
+                <div class="info-text">вопросов в&nbsp;тесте</div>
+              </div>
+              <div class="info-container-inner">
+                <div class="info-number">7,75</div>
+                <div class="info-text">средний балл за тест</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+  }
+
+  .wrapper .container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+    max-width: 1500px;
+    background: #ffffff;
+    box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .wrapper .container .bottom-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: Montserrat;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  .wrapper .container .bottom-panel .info-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .wrapper .container .bottom-panel .info-container .info-container-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .info-container-inner .info-number {
+    color: #813fea;
+    font-feature-settings: "liga" off, "clig" off;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .info-container-inner .info-text {
+    color: #b7b5be;
+    font-feature-settings: "liga" off, "clig" off;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+
+    max-width: 70px;
+  }
+
+  /*------ SWITCH CSS ---------*/
+
+  .container {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .label {
+    background-color: transparent;
+    border: 2px solid #e5e5e6;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    width: 160px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    padding: 5px;
+    position: relative;
+  }
+
+  .label:hover {
+    border: 2px solid #d8d7db;
+  }
+
+  .label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    transition: all 0.4s ease;
+    border-radius: 100%;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .label .input {
+    display: none;
+  }
+
+  .label .title {
+    font-size: 14px;
+    color: #b7b5be;
+    transition: all 0.4s ease;
+    position: absolute;
+    left: 50px;
+    /* bottom: 0px; */
+    text-align: center;
+  }
+
+  .label .title:last-child {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .label .circle {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #d8d7db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    position: relative;
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    overflow: hidden;
+  }
+
+  .label .circle .icon {
+    color: #fff;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+  }
+
+  .label .circle .square {
+    aspect-ratio: 1;
+    width: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+  }
+
+  .label .circle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #9887ff;
+    width: 100%;
+    height: 0;
+    transition: all 0.4s ease;
+  }
+
+  .label:has(.input:checked) {
+    width: 57px;
+    animation: installed 0.4s ease 3.5s forwards;
+  }
+
+  .label:has(.input:checked)::before {
+    animation: rotate 3s ease-in-out 0.4s forwards;
+  }
+
+  .label .input:checked + .circle {
+    animation: pulse 1s forwards, circleDelete 0.2s ease 3.5s forwards;
+    rotate: 180deg;
+  }
+
+  .label .input:checked + .circle::before {
+    animation: installing 3s ease-in-out forwards;
+  }
+
+  .label .input:checked + .circle .icon {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .label .input:checked ~ .circle .square {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .label .input:checked ~ .title {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .label .input:checked ~ .title:last-child {
+    animation: showInstalledMessage 0.4s ease 3.5s forwards;
+  }
+
+  .label .input:checked ~ .title {
+    color: #9887ff;
+    left: 42px;
+  }
+
+  @keyframes pulse {
+    0% {
+      scale: 0.95;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+      scale: 1;
+      box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+    }
+    100% {
+      scale: 0.95;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+
+  @keyframes installing {
+    from {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(-90deg) translate(27px) rotate(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    99% {
+      transform: rotate(270deg) translate(27px) rotate(270deg);
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes installed {
+    100% {
+      width: 150px;
+      border-color: #9887ff;
+    }
+  }
+
+  @keyframes circleDelete {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes showInstalledMessage {
+    100% {
+      opacity: 1;
+      visibility: visible;
+      right: 56px;
+    }
+  }
+
+  /*--------- END --------*/
+</style>
